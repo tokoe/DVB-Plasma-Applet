@@ -1,0 +1,21 @@
+Installation
+-------------
+
+To compile and install the dvb applet you need the developer
+packages of KDE 4.2.X and Qt 4.Y (Y >= 4). Furthermore the
+cmake application must be installed.
+
+Do the following steps:
+
+  tar -xjf dvb.tar.bz
+  mkdir dvb.build
+  cd dvb.build
+  ccmake -DCMAKE_INSTALL_PREFIX=$KDEDIR ../dvb
+
+    // inside ccmake type 'c' + <enter> twice and 'g' + <enter> once
+
+  make
+  su -c "make install"
+
+Now everything should be installed and you can select the dvb applet
+from the applet selection on the plasma desktop.

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=DVB Info
+Comment=Shows DVB information from the internet.
+Icon=face-smile-big
+Type=Service
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-KDE-Library=plasma_applet_dvb
+X-KDE-PluginInfo-Author=Tobias Koenig
+X-KDE-PluginInfo-Email=tokoe@kde.org
+X-KDE-PluginInfo-Name=dvb
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=http://plasma.kde.org/
+X-KDE-PluginInfo-Category=Graphics
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true

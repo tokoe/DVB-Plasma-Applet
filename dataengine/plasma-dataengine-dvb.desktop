@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DVB Data Engine
+Comment=Data Engine for Dresdner Verkehrsbetriebe
+X-KDE-ServiceTypes=Plasma/DataEngine
+Type=Service
+Icon=face-smile-big
+X-KDE-Library=plasma_engine_dvb
+
+X-KDE-PluginInfo-Author=
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-Name=dvb
+X-KDE-PluginInfo-Version=
+X-KDE-PluginInfo-Website=
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=
