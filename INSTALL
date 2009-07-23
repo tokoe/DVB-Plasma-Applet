@@ -16,6 +16,9 @@ Do the following steps:
 
   make
   su -c "make install"
+  kbuildsycoca4
+  kquitapp plasma
+  plasma
 
 Now everything should be installed and you can select the dvb applet
 from the applet selection on the plasma desktop.
