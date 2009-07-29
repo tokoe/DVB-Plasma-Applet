@@ -58,13 +58,13 @@ void Request::Private::_k_finished( KJob *job )
 
     QByteArray data = mRawData;
     data.replace( "&quot;", "\"" );
-    data.replace( "&#196;", QByteArray( 1, QChar( 196 ).toLatin1() ) );
-    data.replace( "&#214;", QByteArray( 1, QChar( 214 ).toLatin1() ) );
-    data.replace( "&#220;", QByteArray( 1, QChar( 220 ).toLatin1() ) );
-    data.replace( "&#223;", QByteArray( 1, QChar( 223 ).toLatin1() ) );
-    data.replace( "&#228;", QByteArray( 1, QChar( 228 ).toLatin1() ) );
-    data.replace( "&#246;", QByteArray( 1, QChar( 246 ).toLatin1() ) );
-    data.replace( "&#252;", QByteArray( 1, QChar( 252 ).toLatin1() ) );
+    data.replace( "&#196;", QString( QChar( 196 ) ).toLocal8Bit() );
+    data.replace( "&#214;", QString( QChar( 214 ) ).toLocal8Bit() );
+    data.replace( "&#220;", QString( QChar( 220 ) ).toLocal8Bit() );
+    data.replace( "&#223;", QString( QChar( 223 ) ).toLocal8Bit() );
+    data.replace( "&#228;", QString( QChar( 228 ) ).toLocal8Bit() );
+    data.replace( "&#246;", QString( QChar( 246 ) ).toLocal8Bit() );
+    data.replace( "&#252;", QString( QChar( 252 ) ).toLocal8Bit() );
 
     const Parser parser;
 
