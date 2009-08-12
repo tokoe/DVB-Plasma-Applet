@@ -32,14 +32,9 @@ DvbApplet::DvbApplet( QObject *parent, const QVariantList &args )
 {
     setHasConfigurationInterface( true );
 
-    loadConfig();
-
     resize( QSizeF( 341, 213 ) );
 
     mBackground = QImage( ":background" );
-
-    Plasma::DataEngine *engine = dataEngine( "dvb" );
-    engine->connectSource( mIdentifier.identifier(), this );
 }
 
 DvbApplet::~DvbApplet()
@@ -48,6 +43,11 @@ DvbApplet::~DvbApplet()
 
 void DvbApplet::init()
 {
+    loadConfig();
+
+    Plasma::DataEngine *engine = dataEngine( "dvb" );
+    engine->connectSource( mIdentifier.identifier(), this );
+
     updateInfo();
 }
 
